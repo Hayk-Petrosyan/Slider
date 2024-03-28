@@ -1,0 +1,55 @@
+#slider {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#current-photo {
+    width: 800px;
+    height: 450px;
+    object-fit: cover;
+}
+
+#slider button {
+    background-color: #efeeee;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color .2s ease-in-out;
+}
+
+#slider button:hover {
+    background-color: #c5c3c3;
+}
+
+#slider button:active {
+    top: 1px;
+}
+
+#slider button:not(:last-child) {
+    margin-right: 20px;
+}
+
+#imageLine {
+    display: flex;
+}
+
+#imageLine img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.active-photo {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.imageBar:not(:last-child) {
+    margin-right: 5px;
+}
